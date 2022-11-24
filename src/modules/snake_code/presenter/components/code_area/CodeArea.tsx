@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import React, { useRef, useEffect } from "react";
 import CodeAreaHandler from "./CodeAreaHandler";
 import "./CodeArea.css";
@@ -36,6 +36,23 @@ const CodeArea: React.FC<Props> = ({}) => {
           onInput={(event) => codeAreaHandle.update(event)}
           onKeyDown={(event) => codeAreaHandle.checkTab(event)}
         />
+
+        <Button
+          variant="contained"
+          color="success"
+          style={{
+            position: "absolute",
+            top: "2vh",
+            left: "37vw",
+          }}
+          disabled={true}
+        >
+          <span style={{
+            padding: "2px 48px",
+          }}>
+          Enviar
+          </span>
+        </Button>
 
         <pre id="highlighting">
           <code
