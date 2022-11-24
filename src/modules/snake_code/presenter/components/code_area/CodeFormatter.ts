@@ -1,10 +1,13 @@
 import Prism from "prismjs";
 
-export default class CodeAreaHandler {
+import { makeAutoObservable } from "mobx"
+export default class CodeFormatter {
   codeArea: Element;
 
   constructor(codeArea: Element) {
     this.codeArea = codeArea;
+
+    makeAutoObservable(this);
   }
 
   setCodeArea(codeArea: Element) {

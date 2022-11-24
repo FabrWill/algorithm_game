@@ -46,7 +46,7 @@ const SnakeArea: React.FC<Props> = ({}) => {
                 d="M 32 0 L 0 0 0 32"
                 fill="none"
                 stroke="gray"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />{" "}
               \
             </pattern>{" "}
@@ -64,7 +64,7 @@ const SnakeArea: React.FC<Props> = ({}) => {
                 d="M 80 0 L 0 0 0 80"
                 fill="none"
                 stroke="gray"
-                stroke-width="1"
+                strokeWidth="1"
               />{" "}
               \
             </pattern>{" "}
